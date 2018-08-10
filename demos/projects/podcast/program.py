@@ -19,7 +19,7 @@ def show_header():
 def display_results():
 
     start = random.randint(90, 110)
-    end = random.randint(131, service.get_latest_show_id()+1)
+    end = random.randint(132, service.get_latest_show_id()+1)
 
     for show_id in range(start, end):
         info = service.get_episode(show_id)
